@@ -1,0 +1,22 @@
+
+
+
+p{
+    font-family:Arial Rounded MT Bold;
+}
+
+img
+{
+
+  border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+
+}
+img
+{
+    border-radius: 50%; 		
+}
+
+h1
+{font-family="Harlow Solid Italic";}

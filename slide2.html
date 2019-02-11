@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image Slider CSS3</title>
+	<link rel="stylesheet" type="text/css" href="slide2.css">
+	<link rel="stylesheet" type="text/css" href="slide34.css">
+	<style type="text/css">
+	.form{
+                display: block;
+                background-color: #fd5a5a;
+                width: 500px;
+                height: 300px;
+                margin: 0 auto;
+                border-radius: 50px;
+                text-align: center;
+            }
+            
+            .input{
+                position: relative;
+                height: 40px;
+                width: 40%;
+                top:10%;
+                /*left:10%;*/
+                left:15%;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 20px;
+                vertical-align: middle;
+            }
+            
+            .submit {
+                position: relative;
+                background-color: white; /* Green */
+                border: 2px solid #fd5a5a;
+                color: #fd5a5a;
+                width: 30%;
+                top: 40%;
+                right:20%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                text-align: center;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 10px;
+                transition-duration: 1s;
+            }
+            
+            #s3{
+            	position:relative;
+            	text-align: center;
+            	vertical-align: middle;
+            	height: 40px;
+            	width:100px;
+            }
+            .submit:hover{
+                border: 2px solid white;
+                background-color: #fd5a5a;
+                color: white;
+            }
+            
+            .sele{
+            	position: relative;
+                height: 40px;
+                width: 40%;
+                top:10%;
+                /*right:2%;*/
+                border-radius: 10px;
+                font-size: 20px;
+            }
+        </style>
+<script type="text/javascript">
+	function al(){
+		alert("Successfully Registered! We will contact you within 24 hours!!!")
+	}
+
+</script>
+</head>
+<body>
+<div id="slider" >
+<figure>
+<img src="i1.jpg" height="600px">
+<div class="text-block"> 
+    <h4>Nature</h4>
+    <p>What a beautiful sunrise</p>
+  </div>
+<img src="i2.jpg" height="600px">
+<img src="i3.jpg" height="600px">
+<img src="i1.jpg" height="600px">
+<img src="i2.jpg" height="600px">
+</figure>	
+
+</div>
+
+
+
+	
+	<br>
+	<br>
+	
+	<div style = "color: #fd5a5a;">
+            <center><h1>Hospitals Availability</h1></center>
+        </div>
+        <form name = "register" class = "form" onsubmit="al()">
+            <select class="sele" placeholder="Choose nearby Hospital" required>
+            		<option default>Choose nearby Hospital</option>
+            		<option>1 hospital</option>
+            		<option>2 hospital</option>
+            		<option>3 hospital</option>
+            		<option>4 hospital</option>
+
+
+            </select><br>
+
+            <input type="date" class="input" placeholder="Choose Date" name="date" required>
+            <input class = "submit" type = "submit" value = "Submit"></input>
+        </form>
+		<center style = "color: black">Go to the <a href = "Home.html">home page.</a> </center>	
+
+	
+</div>
+
+
+	
+
+
+
+		 <ul class = "menubar">
+			<li class = "menubar"><a class = "menubar" href="Home.html">Home</a></li>
+			<li class = "menubar"><a class = "menubar" href="info.html">Information</a></li>
+            <li class = "menubar"><a class = "menubar" href="Eligibility.html">Eligibility</a></li>
+            <li class = "menubar"><a class = "menubar" href = "Login.html">Login</a></li>
+			<li class = "menubar"><a class = "menubar" href = "ContactUs.html">Contact Us</a></li>
+            
+        </ul>
+        <script>
+				var modal1 = document.getElementById('modal1');
+				var btn1 = document.getElementById('btn1');
+				var span1 = document.getElementsByClassName("close1")[0];
+				
+				btn1.onclick = function(){
+					modal1.style.display = "block";
+					
+				}
+				
+				span1.onclick = function(){
+					modal1.style.display = "none";
+				}
+				
+				window.onclick = function(event){
+					if (event.target == modal1){
+						modal1.style.display = "none";
+					}
+				}
+				
+				
+				var modal2 = document.getElementById('modal2');
+				var btn2 = document.getElementById('btn2');
+				var span2 = document.getElementsByClassName("close2")[0];
+					
+				btn2.onclick = function(){
+					modal2.style.display = "block";
+				}
+					
+				span2.onclick = function(){
+					modal2.style.display = "none";
+				}
+					
+				window.onclick = function(event){
+					if (event.target == modal2){
+						modal2.style.display = "none";
+					}
+				}
+			
+			var modal3 = document.getElementById('modal3');
+				var btn3 = document.getElementById('btn3');
+				var span3 = document.getElementsByClassName("close3")[0];
+					
+				btn3.onclick = function(){
+					modal3.style.display = "block";
+				}
+					
+				span3.onclick = function(){
+					modal3.style.display = "none";
+				}
+					
+				window.onclick = function(event){
+					if (event.target == modal3){
+						modal3.style.display = "none";
+					}
+				}
+			
+			
+		</script>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <style>
+            .form{
+                display: block;
+                background-color: #fd5a5a;
+                width: 800px;
+                height: 400px;
+                margin: 0 auto;
+                border-radius: 50px;
+                text-align: center;
+            }
+            
+            .input{
+                position: relative;
+                height: 40px;
+                width: 40%;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 20px;
+            }
+            
+            .submit {
+                position: relative;
+                background-color: white; /* Green */
+                border: 2px solid #fd5a5a;
+                color: #fd5a5a;
+                width: 30%;
+                top: 40%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                text-align: center;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 10px;
+                transition-duration: 1s;
+            }
+            
+            .submit:hover{
+                border: 2px solid white;
+                background-color: #fd5a5a;
+                color: white;
+            }
+            
+            body{
+                background: url("Importance-of-Blood-Donation.jpg");
+                background-size: cover;
+                
+            }
+            a {
+                color: #fd5a5a;
+            }
+            
+        </style>
+        <script type="text/javascript">
+            function fn1(){
+                window.alert("Your response is recorded");
+            }
+        </script>
+    </head>
+    <body>
+        <div style = "color: #fd5a5a;">
+            <center><h1>Login page</h1></center>
+            <center><p>Not a member <a href="Register.html">Click here to signup</a></p></center>
+        </div>
+        <form class = "form" onsubmit="fn1()">
+            <input class = "input" style = "top:20%;"type = "text" name = "username" placeholder = "Username" required></input> </br>
+            <input class = "input" style = "top:27%;"type = "password" name = "password" placeholder = "Password" required></input> </br>
+			<input class = "submit" type = "submit" value = "Login"></input> </br>
+        </form>
+		</br>
+        <center style = "color: black">Register as a Donor<a href = "Register_Donor.html">here</a> </center>
+		<center style = "color: black">Go to the <a href = "Home.html">home page.</a> </center>
+	</body>
+</html>

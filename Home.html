@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" type="text/css" href="file1.css">
+        <script type="text/javascript">
+            function fn(){
+            var b=document.getElementById("search").value;
+            if(b == "hospitals" || b=="HOSPITALS" || b=="Hospitals" || b=="hospital" || b=="HOSPITAL")
+            {
+                window.open("Hospitals.html");
+            }   
+            if(b == "eligibility" || b=="Eligibility" || b=="ELIGIBILITY" ||b=="eligible" ||b=="ELIGIBLE" ||b=="Eligible")
+            {
+            window.open("Eligibility.html");
+            }
+    if(b=="info" || b=="Information" || b=="INFORMATION" || b=="Info" || b=="INFO" || b=="nformation")
+{
+    window.open("Info.html");
+}
+}
+        </script>
+        <style>
+            body, html {
+                height: 100%;
+                margin: 0;
+            }
+            
+            .parallax1 {
+                /* The image used */
+                /*background-image: url('img1.jpg');*/
+                /* Full height */
+                /*height: 100%; */
+                width:100%;
+                /*padding-top: 10px;*/
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding-top: 0px;
+            }
+            
+            .parallax2 {
+                /* The image used */
+                background-image: url('Importance-of-Blood-Donation.jpg');
+                /* Full height */
+                height: 100%; 
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            
+            .parallax3 {
+                /* The image used */
+                background-image: url('Saver.jpeg');
+                /* Full height */
+                height: 100%; 
+                margin-top: 0
+                /* Create the parallax scrolling effect */
+                /*background-attachment: fixed;*/
+                background-position: center;
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
+            .parallax4 {
+                /* The image used */
+                background-image: url('519792114.jpg');
+                /* Full height */
+                height: 100%; 
+
+                /* Create the parallax scrolling effect */
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+            
+            .content{
+                background-color: #fd5a5a;
+                padding-left: 20%;
+                padding-right: 20%;
+                padding-top: 5%;
+                padding-bottom: 5%;
+            }
+            
+            .text{
+                margin-bottom: 10%;
+                font-size: 25px;
+                color: white;
+                font-family: Bookman;
+            }
+            
+            .button {
+                display: block;
+                margin: auto;
+                background-color: white; /* Green */
+                border: 2px solid #fd5a5a;
+                color: #fd5a5a;
+                width: 40%;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                text-align: center;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 10px;
+                transition-duration: 1s;
+            }
+            
+            .button:hover{
+                border: 2px solid white;
+                background-color: #fd5a5a;
+                color: white;
+            }
+            /*.yv {display:none;}
+            .preload { 
+                width:100px;
+                height: 100px;
+                position: fixed;
+                top: 50%;
+                left: 50%;
+                }*/
+            
+            ul.menubar{ 
+                display: block;
+                margin: auto;
+                text-align: center;
+                padding-top: 2%;
+                padding-bottom: 2%;
+                margin: 0px;
+                list-style-type:none;
+                background-color:rgb(64,64,64);
+               }
+            li.menubar{
+                display:inline;
+                padding-left: 60px;
+                padding-right: 30px;
+            }
+            a.menubar{
+                display: inline;
+                text-decoration:none;
+                font-weight:bolder;
+                color:white;
+                font-size:30px;
+                font-family: sans-serif;
+                transition-duration: 1s;
+            }
+            a.menubar:hover{
+                color:lightpink;
+            }
+            .dropdown {
+  float: left;
+  overflow: hidden;
+  vertical-align: center;
+  padding-top: 12px;
+}
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #1f1f1f;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+            
+        </style>
+    </head>
+    <body>
+        
+           <center><img src="loading.gif" id="loader" ></center> 
+        
+        <div id="rak" style="display: none">
+      
+        <div class="navbar">
+
+  <a href="Home.html"><i class="fa fa-plus-square   "> Home</i></a>
+  <a href="1233/index.html">About</a>
+  <a href="shub/yahoo.html">Contact</a>
+  <a class="a5" href="#text"><form><i class="fa fa-search">&nbsp<input type="text" id="search" onchange="fn()"></form></i></a>
+<!-- <a href="Register_Donor.html">Signup</a> -->
+  <div class="dropdown">
+    <button class="dropbtn"><font size="5px">Signup</font> 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="1233/Register_Donor.html">Donor Registration</a>
+      <a href="camp.html">Camp Organization</a>
+      <a href="Register.html">Hospital Registration</a>
+      <!-- <a href="#">Link 3</a> -->
+    </div>
+  </div> 
+  <a href="shub/login.html">Login</a>
+  
+  </div>
+</div>
+        <div class = "parallax1"> 
+            <img src="organ-donation.jpg" width="100%" height="110%"></div>
+        
+        <div class = "content"> 
+            <p class = "text">Donating blood is the best. Blood is the most precious gift that anyone can give to another person — the gift of life. A decision to donate your blood can save a life, or even several if your blood is separated into its components — red cells, platelets and plasma — which can be used individually for patients with specific conditions.</p>
+            <a class = "button" href="Register_Donor.html">BECOME A DONOR</a>
+        </div>
+        
+        <div class = "parallax2"> </div>
+        
+        <div class = "content">
+            <p class = "text">Hospitals are important. Blood donors play a vital role in the healthcare of patients in your community. 37% of the population is eligible to donate blood, yet only 5% actually do. With every blood donation, you are providing strength, hope and courage to patients and their families in your local hospitals. </p>
+            <a class = "button" href="shub/login.html">Already a Donor</a>
+        </div>
+        
+        <div class = "parallax3"> </div>
+        
+        <div class = "content">
+            <p class = "text">We have tied up with so many hospitals over the globe for the blood donation facility. our connection is very big over the entire globe. </p>
+            <a class = "button" href="Hospitals.html">OUR HOSPITALS</a>
+        </div>
+        
+        <div class = "parallax4"> </div>
+        
+        <ul class = "menubar">
+			<li class = "menubar"><a class = "menubar" href="Home.html">Home</a></li>
+			<li class = "menubar"><a class = "menubar" href="info.html">Information</a></li>
+            <li class = "menubar"><a class = "menubar" href="Eligibility.html">Eligibility</a></li>
+            <li class = "menubar"><a class = "menubar" href = "Login.html">Login</a></li>
+			<li class = "menubar"><a class = "menubar" href = "shub/yahoo.html">Contact Us</a></li>
+            
+        </ul>
+    </div>
+     </div>
+      </div>
+       </div>
+        </div>
+         </div>
+          </div>
+           </div>
+   <script>
+       $(document).ready(function(){setInterval(hideloader, 2000)});
+       function hideloader(){$("#rak").fadeIn();$("#loader").fadeOut()};
+
+   </script>
+   
+    </body>
+</html>

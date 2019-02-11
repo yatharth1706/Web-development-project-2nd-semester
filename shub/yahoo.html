@@ -1,0 +1,391 @@
+<!doctype html>
+<html>
+    <head>
+          <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Contact Us</title>
+        
+ <style>
+                 
+ body
+{
+	margin: 0 0 0 0;
+}
+.navbar {
+	/*position: fixed;*/
+    
+	margin-top: 0px;
+    overflow: hidden;
+    
+  /*background-color: #355664;*/
+    
+  font-family: Arial;
+  height: 70px;
+  line-height: 40px;
+  background: rgba(100,86,100,0.8)
+      
+     /*font-size: 80px;*/
+     /*padding-top:0;*/
+}
+            
+.navbar a:hover 
+{
+    color: #6be0d6;
+}
+
+/* Links inside the navbar */
+            
+.navbar a 
+{
+	/*position: fixed;*/
+    
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ 
+ </style>
+        
+        
+ <style>
+     
+body 
+{
+  font-family: Arial, Helvetica, sans-serif;    
+}
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    width: 100%;
+    background: url("organ-donation.jpg");
+    background-size: 100%;
+    
+}
+
+            
+            
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.row:after {
+    
+    display: table;
+    clear: both;
+}
+            
+img
+    {
+       border-radius: 50%; 
+    }
+    
+</style>
+        
+ <style>
+        
+        body, html 
+            {
+                height: 100%;
+                margin: 0;
+                
+            }
+          
+            .content
+            {
+                background-color: #fd5a5a;
+                padding-left: 20%;
+                padding-right: 20%;
+                padding-top: 5%;
+                padding-bottom: 5%; 
+            }
+            
+            .text
+            {
+                margin-bottom: 10%;
+                font-size: 20px;
+                color: white;
+                font-family: Bookman;
+            }
+            
+			.content h1
+            {
+				margin-bottom: 6%;
+                font-size: 30px;
+                color: Red;
+                font-family: Bookman;
+			}
+			
+			.content h2
+            {
+				margin-bottom: 6%;
+                font-size: 30px;
+                color: brown;
+                font-family: Bookman;
+			}
+			
+			
+			.content p
+            {
+				margin-bottom: 6%;
+                font-size: 25px;
+                color: white;
+                font-family: Bookman;
+			}
+			
+        </style>
+        
+    </head>
+    
+<body>
+
+  <div class="navbar">
+
+  <a href="../Home.html"><i class="fa fa-plus-square"> Home</i></a>
+  <a href="index.html">About</a>
+  <a href="login.html">Login</a>
+  <a href="Register_Donor.html">Signup</a>
+  <a href=Hospitals.html>Hospitals</a>
+  <!-- <!<a class="a5" href="#Login">Login</a> -->
+  
+</div>
+      
+    <div class="container">
+        
+        
+  <div style="text-align:center">
+      <marquee>
+    <h1 style="color: red">HELP SAVE A LIFE. GIVE THE GIFT OF BLOOD</h1>
+    </marquee>
+
+    <h1>Contact Us</h1>
+    <p>DONATE BLOOD or leave us a message:</p>
+  </div>
+  <div class="row">
+    <div class="column">
+      <div id="map" style="width:100%;height:500px"></div>
+    </div>
+    <div class="column">
+        
+      <form onsubmit="fun1()">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+        <label for="state">State</label>
+        <select id="state" name="state" required>
+          <option value="J & K">Jammu and Kashmir</option>
+          <option value="Punjab">Punjab</option>
+          <option value="Himachal Pradesh"> Himachal Pradesh</option>
+            <option value="Haryana">Haryana </option>
+            <option value="Rajasthan">Rajasthan </option>
+            <option value="Madhya Pradesh">Madhya Pradesh </option>
+            <option value="Uttar Pradesh ">Uttar Pradesh </option>
+            <option value="Chattisgarh ">Chattisgarh </option>
+            <option value="Bihar ">Bihar </option>
+            <option value="Jharkhand ">Jharkhand </option>
+            <option value="Orissa ">Orissa </option>
+            <option value="Karnataka ">Karnataka </option>
+            <option value="Maharashtra "> Maharashtra</option>
+            <option value="Kerala ">Kerala </option>
+            <option value="Tamil Nadu ">Tamil Nadu </option>
+            <option value="Andhra Pradesh ">Andhra Pradesh </option>
+            <option value="Telangana ">Telangana </option>
+            <option value="Mizoram ">Mizoram </option>
+            <option value="Meghalaya ">Meghalaya </option>
+            <option value="Uttrakhand ">Uttrakhand </option>
+            <option value="Manipur ">Manipur </option>
+            <option value="Sikkim ">Sikkim </option>
+            <option value="Anunachal Pradesh ">Anunachal Pradesh </option>
+            <option value="Assam ">Assam </option>
+            <option value="Goa ">Goa </option>
+            <option value="Delhi ">Delhi </option>
+            <option value="Gujarat ">Gujarat </option>
+            <option value="Tripura ">Tripura </option>
+            <option value="West Bengal ">West Bengal </option>
+            
+            
+        </select>
+        <label for="subject">Subject</label>
+        <textarea id="subject" name="subject" placeholder="Write something.." required style="height:170px"></textarea>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </div>
+        
+       
+    <div>
+    
+     <h3>You can inform our Doctors in case of emergency :</h3>
+       <div>
+       <img src="sh.jpg" height="10%" width="10%" style="margin-left: 40px">
+        
+        
+        <img src="yash.jpg" height="170px" width="170px" style="float: right">
+        
+                
+        <img src="ashu.jpg" height="170px" width="170px" style="margin-left: 230px">
+        
+        <img src="rehan.png" height="170px" width="170px" style="margin-left: 280px; display: inline-block">
+           </div>
+
+    <div>
+        
+        <span style="margin-left: 27px; font-size: 20px"><b>Dr.Shubham Jain</b></span>
+        <span style="margin-left: 220px; font-size: 20px"><b>Dr.Ashutosh Bajpai</b></span>
+        <span style="float:right; margin-right: 10px; font-size: 20px"><b>Dr.Yatharth Verma</b></span>
+        <span style="margin-left: 260px; font-size: 20px"><b>Dr.Shaik RehanUddin</b></span>
+        </div>
+    </div>
+        
+        
+    
+    <div>
+        
+    
+        <span style="margin-left: 27px">Contact No. 8923454618</span>
+        <span style="margin-left: 205px">Contact No. 723459364</span>
+        <span style="float:right; margin-right: 10px">Contact No. 9487598273</span>
+        <span style="margin-left: 270px">Contact No. 53216215313</span>
+      
+    
+    </div>
+        
+<script>
+
+function myMap() {
+  var myCenter = new google.maps.LatLng(31.3749,75.3842);
+  var mapCanvas = document.getElementById("map");
+  var mapOptions = {center: myCenter, zoom: 12};
+  var map = new google.maps.Map(mapCanvas, mapOptions);
+  var marker = new google.maps.Marker({position:myCenter});
+  marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+    
+    
+    <script>
+
+        function fun1()
+        {
+            window.alert("Your Message is submitted");
+        }
+    
+    </script>
+    
+ 
+    <div class = "content"> 
+            
+			
+			<h2>TO DONATE BLOOD</h2>
+			
+			<p class="text">
+				Before donating blood please ensure if you are eligible by reading our 
+				<a href = "info.html" style="color:white">information page</a> 
+				and taking our 
+				<a href = "Eligibility.html" style="color:white">eligibility quiz.</a>
+				<br /><br />
+				
+				Our official email, office location and office timings are listed below<br><br />
+				If you wish to book an appointment in order to donate please comtact the number below.<br />
+				
+			</p>
+			
+			<h2>OFFICES</h2>
+			
+			<table class="text" cellpadding = "10px">
+			<tr>
+				<td>State Office:</td>
+				<td>Koramangala 6<sup>th</sup> Block, opposite ICICI bank, Bangalore.</td>
+			</tr>
+			<tr>
+				<td>Head office:</td>
+				<td>Salt lake, 3<sup>rd</sup> Cross, near Apollo, Kolkata.</td>
+			</tr>
+			
+			</table>
+			
+			<h2>TIMINGS</h2>
+			
+			<table class="text" cellpadding = "10px">
+			<tr>
+				<td>Monday</td>
+				<td>07:00 to 21:00</td>
+			</tr>
+			<tr>
+				<td>Tuesday</td>
+				<td>07:00 to 21:00</td>
+			</tr>
+			<tr>
+				<td>Wednesday</td>
+				<td>07:00 to 21:00</td>
+			</tr>
+			<tr>
+				<td>Thursday</td>
+				<td>07:00 to 21:00</td>
+			</tr>
+			<tr>
+				<td>Friday</td>
+				<td>07:00 to 21:00</td>
+			</tr>
+			<tr>
+				<td>Saturday</td>
+				<td>07:00 to 21:00</td>
+			</tr>
+			<tr>
+				<td>Sunday and National/<br />Public holidays</td>
+				<td>07:00 to 17:00</td>
+			</tr>
+			
+			
+			
+			</table>
+			
+			
+			<h2>CALL US OR WRITE TO US</h2>
+			
+			<p class="text">
+				Your feedback and support would mean the world to us</br>
+    
+				email: <a style = "color: aqua" href = "mailto:aveek.s98@gmail.com">aveek.s98@gmail.com</a> </br>
+    
+				Phone: <a style = "color: aqua" href = "tel:+917204069657">+91 7204069657</a><br>
+                
+                Helpline Number: <a style="color: aqua" href="0141-2348764">0141-2348764</a><br>
+                You can Call us 24X7.
+     
+    </body>
+</html>

@@ -1,0 +1,324 @@
+
+
+            <!DOCTYPE html>
+            <html>
+            <head>
+                <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+                <style type="text/css">
+                                   body{
+    margin: 0 0 0 0;
+}
+.navbar {
+    /*position: fixed;*/
+    margin-top: 0px;
+  overflow: hidden;
+  /*background-color: #355664;*/
+  font-family: Arial;
+  height: 70px;
+  line-height: 40px;
+  background: rgba(53,86,100,0.8)
+  /*font-size: 80px;*/
+/*padding-top:0;*/
+}
+body{
+    background: url("RBCs.jpg");
+    background-size: cover;
+}
+.navbar a:hover {
+    color: #6be0d6;}
+.navbar a:active{
+    color: #6be0d6;
+    }
+/* Links inside the navbar */
+.navbar a {
+    /*position: fixed;*/
+  float: left;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.modal1{
+            border-radius: 30px;
+            display: none;
+            position: fixed;
+            z-index: 20;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0, 0, 0, 0.4);
+            background: fixed;
+            animation: 10s;   
+        }
+            // MAKE IT STOOOOOOP
+            
+            body.modal1-open {
+                overflow: hidden;
+                position: fixed;
+            }
+            
+        .modal1-content{
+            border-radius: 60px;
+           background-image: linear-gradient(to right top, #190537, #083a72, #006fa8, #00a8d0, #12e2eb);
+            margin: 5% auto;
+            padding: 5%;
+            /*border: 5px solid blue;*/
+            width: 80%;
+            font-size: 25px;
+                    font-family: sans-serif;
+            transition: 10s;
+            /*font-weight:bolder;*/
+            color:black;
+        }
+
+/* Dropdown button */
+.dropdown .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+.a5 {
+margin-left: 500px
+}
+/* Add a red background color to navbar links on hover */
+.navbar a:hover, .dropdown:hover .dropbtn {
+  /*background-color: grey;*/
+  color: #6be0d6;
+}
+p{
+    font-size: 25px;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+.content{
+    margin-top: 0;
+}
+#left{
+
+    /*background-color: red;*/
+border-radius: 20px;
+margin-top: 150px;
+margin-left: 30px;
+/*padding-top: 0px;*/
+    /*border: 1px solid black;*/
+    width:40%;
+    display: inline-block;
+    background-color: rgba(220,40,50,0.9);
+    /*padding-top: 400px;*/
+}
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.form{
+                display: block;
+                background-color: #fd5a5a;
+                width: 600px;
+                height: 800px;
+                margin-top: 0px;
+                margin-left:50px;
+                border-radius: 50px;
+                text-align: center;
+            }
+            
+            .input{
+                position: relative;
+                height: 40px;
+                width: 50%;
+                top:10%;
+                /*left:10%;*/
+                
+                border-radius: 10px;
+                text-align: center;
+                font-size: 20px;
+                vertical-align: middle;
+            }
+            
+            .submit {
+                position: relative;
+                background-color: white; /* Green */
+                border: 2px solid #fd5a5a;
+                color: #fd5a5a;
+                width: 30%;
+                top: 40%;
+                
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                text-align: center;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 10px;
+                transition-duration: 1s;
+            }
+            
+            #s3{
+                position:relative;
+                text-align: center;
+                vertical-align: middle;
+                height: 40px;
+                width:100px;
+            }
+            .submit:hover{
+                border: 2px solid white;
+                background-color: #fd5a5a;
+                color: white;
+            }
+            
+            /*.sele{
+                position: relative;
+                height: 40px;
+                width: 40%;
+                top:10%;
+                /*right:2%;*/
+             /*   border-radius: 10px;
+                font-size: 20px;
+            }*/
+
+                </style>
+                <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                <title>camps</title>
+            </head>
+            <body>
+            <div class="navbar">
+
+  <a href="Home.html"><i class="fa fa-plus-square   "> Home</i></a>
+  <a href="Info.html">About</a>
+  <a href="Contact.htmk">Contact</a>
+  <a class="a5" href="#text"><form><i class="fa fa-search">&nbsp<input type="text" id="search" onchange="fn()"></form></i></a>
+  <a href="Register_Donor.html">Signup</a>
+  <a href="login.html">Login</a>
+  
+  </div>
+
+ <!-- <div class = "content">  -->
+            <div id = "left"><h1>Organinizing a Camp</h1>
+                <p><font size="5px">Organizing blood donation camps is the perfect way to cater to the demand of blood. Everyone wants to contribute towards the society and save lives. You, as a camp organizer, are giving everyone a chance to do so. Organize these camps regularly and bring smiles to many faces.
+
+                To organize a camp with us, fill up this <button id="form-button">form</button>
+                </font></p>
+
+                
+                <button id = "btn1" class = "button">MORE INFO</button>
+                
+            </div>
+        <!-- </div> -->
+            <div class="formdiv" style="overflow:hidden; height:0px; float:right; width: 700px;">
+                <form class="form" onsubmit="fn122()">
+                <input class = "input" style = "top:10%;" type = "text" name = "name" placeholder = "Name" required></input> </br>
+                <input class = "input" style = "top:12%;" type = "text" name = "venue" placeholder = "Venue" required></input> </br>
+                 <input class = "input" style = "top:14%;" type = "number" name = "phone" placeholder = "Phone" required></input></br>
+                 <!-- <input class = "input" style = "top:25%;"type = "password" name = "cpassword" placeholder = "Confirm Password" id="cpass" required></input></br> -->
+                <input class = "input" style = "top:16%;" type = "email" name = "email" placeholder = "Email" required></input></br>
+                <input class = "input" style = "top:17%;" type = "text" name = "address" placeholder = "Estimated number of Donations" required></br>
+                 <input class = "input" style = "top:18%;" type = "text" name = "address" placeholder = "City/Region" required></br>
+                 <input class = "input" style = "top:20%;" type = "text" name = "address" placeholder = "Employee/Student/People Strength" required></br>
+                 <input class = "input" style = "top:22%;" type = "date" name = "address" required></br>
+                 <textarea class = "input" style = "top:24%;height:100px;" type = "textarea" rows = "4" cols = "50" name = "address" placeholder = "                            Additional Comments" required></textarea></br>
+                 <input class = "submit" style="top:26%" type = "submit" value = "Register" />
+
+                </form>
+            </div>
+
+            <div id = "modal1" class = "modal1">
+            <div class = "modal1-content">
+                <span class = "close1" style="cursor:pointer">&times;</span>
+                
+                <h1>1. CONTACT US:</h1>
+                
+                <p>We are there to ensure, you organize a successful blood donation camp. Fill up this form to contact us or send us an email.
+                <!-- <br />They have a short shelf life, so we always need to top up the supply: -->
+                </p>
+                
+                <h1>2. FINALIZE A VENUE:</h1>
+                <p> 
+                We can organize the camp in a college, corporate office and residential area. If you cannot find a properly ventilated location inside the building, we can also help you organize a camp outside in a bus/van.
+                </p>
+                <h1>2. FINALIZE A VENUE:</h1>
+                <p> 
+                We can organize the camp in a college, corporate office and residential area. If you cannot find a properly ventilated location inside the building, we can also help you organize a camp outside in a bus/van.
+                </p>
+                <h1>3. CONFIRM A DATE:</h1>
+                <p> 
+                Finalize a date 2-3 weeks in advance. ﻿We contact the various blood banks on your behalf and it usually takes 2-4 days ﻿to finalize the blood bank. After that, ﻿we should leave 2 weeks time for the publicity of the camp. ﻿
+                </p>
+                <h1>4. PUBLICISE:</h1>
+                <p> 
+                We need to publicize the camp in all ways possible- online mailing, posters and standees. We have a collection of posters, which will help you out in this process. We can also organize an awareness session if required.
+                </p>
+                <h1>5 CAMP DAY:</h1>
+                <p> 
+                Our volunteers are there before the start to help you out in arranging the venue. They will plan out the decorations such that the donor feels special while donating blood at the camp. There are also certain requirements on camp day such as water, electricity supply, tables, etc., which we will inform you beforehand.
+                </p>
+                <h1>6. POST CAMP WORK:</h1>
+                <p> 
+                We send out mails to all donors thanking them for donating blood and asking them for the feedback on the camp. Based on that, we judge how successful the camp was and what all needs to be worked upon for future blood donation camps.
+                </p>
+                
+            </div>
+        </div>
+        <script>
+
+            function fn122(){
+                alert("Your response has been recorded");
+            }
+            var modal1 = document.getElementById('modal1');
+                var btn1 = document.getElementById('btn1');
+                var span1 = document.getElementsByClassName("close1")[0];
+                
+                btn1.onclick = function(){
+                    modal1.style.display = "block";
+                    
+                }
+                
+                span1.onclick = function(){
+                    modal1.style.display = "none";
+                }
+                
+                window.onclick = function(event){
+                    if (event.target == modal1){
+                        modal1.style.display = "none";
+                    }
+                }
+
+        $("#form-button").click(function(){$(".formdiv").animate({height: "800px"}, "slow")});</script>
+            </body>
+            </html>

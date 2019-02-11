@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      
+        <style>
+             
+           body 
+    {
+        
+    background: url(rakshit.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+               
+    }
+            
+            .form{
+                display: block;
+                background-color: #fd5a5a;
+                width: 800px;
+                height: 400px;
+                margin: 0 auto;
+                border-radius: 50px;
+                text-align: center;
+            }
+            
+            .input{
+                position: relative;
+                height: 40px;
+                width: 40%;
+                border-radius: 10px;
+                text-align: center;
+                font-size: 20px;
+            }
+            
+            .submit {
+                position: relative;
+                background-color: white; /* Green */
+                border: 2px solid #fd5a5a;
+                color: #fd5a5a;
+                width: 30%;
+                top: 40%;
+                padding-top: 1.5%;
+                padding-bottom: 1.5%;
+                text-align: center;
+                text-decoration: none;
+                font-size: 30px;
+                font-weight: bold;
+                border-radius: 10px;
+                transition-duration: 1s;
+            }
+            
+            .submit:hover{
+                border: 2px solid white;
+                background-color: #fd5a5a;
+                color: white;
+            }
+            
+            a {
+                color: #fd5a5a;
+            }
+       
+            
+            /* hoverable sidenav button*/
+          
+            #mySidenav a {
+    position: absolute;
+    left: -100px;
+    transition: 0.3s;
+    padding: 15px;
+    width: 100px;
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    border-radius: 0 5px 5px 0;
+    text-align: left;
+}
+
+#mySidenav a:hover {
+    left: 0;
+}
+
+#about {
+    top: 200px;
+    background-color: #4CAF50;
+}
+
+#eligibility {
+    top: 260px;
+    background-color: #2196F3;
+}
+
+#hospitals {
+    top: 320px;
+    background-color: #f44336;
+}
+
+#contact {
+    top: 380px;
+    background-color: #555
+}
+            
+            
+       /* social media buttons*/
+            
+            
+            .fa 
+{
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+
+            
+     /* Home button */
+            
+            
+            .btn {
+    
+    border: none;
+    color: darkblue;
+    cursor: pointer;
+    
+}
+
+
+.btn:hover {
+    background-color: burlywood;
+}
+     
+        </style>
+        <script type="text/javascript">
+            function fn1(){
+                window.alert("Welcome, You have successfully logged in");
+            }
+        </script>
+    </head>
+    
+    <body>
+        
+        
+        
+     <a href="../Home.html"> <button class="btn"><i class="fa fa-home"></i></button> </a> 
+        
+        <div style = "color: azure; display: inline-block; margin-left: 530px">
+            <center><h1 style="font-size: 40px">Login page</h1></center>
+            <center><p style="color: azure; font-size: 17px">Not a member ? <a style="color: azure" href="Register_Donor.html">Click here to signup</a></p></center>
+        </div>
+        
+        
+        <div id="mySidenav" class="sidenav">
+  <a href="../index.html" id="about">About</a>
+  <a href="../Eligibility.html" id="eligibility">Eligibility</a>
+  <a href="../Hospitals.html" id="hospitals">Hospital</a>
+  <a href="yahoo.html" id="contact">Contact</a>
+            
+</div>
+        
+        
+        
+        <form class = "form" onsubmit="fn1()">
+            <input class = "input" style = "top:20%;"type = "text" name = "username" placeholder = "Username" required></input> </br>
+            <input class = "input" style = "top:27%;"type = "password" name = "password" placeholder = "Password" required></input> </br>
+			<input class = "submit" type = "submit" value = "Login"> <br>
+        </form>
+		</br>
+ <!--       <center style = "color: black">Register as a Donor<a href = "Register.html">here</a> </center>  -->
+		
+
+
+
+
+ <div style="color: coral;">
+     <center><h3>OR</h3></center>
+     <center><h2>You Can Login through following Accounts :</h2></center>
+
+ 
+<center>
+<a href="https://www.facebook.com/login/" class="fa fa-facebook"></a>
+<a href="https://twitter.com/login?lang=en" class="fa fa-twitter"></a>
+<a href="https://accounts.google.com/AddSession/identifier?hl=en-GB&flowName=GlifWebSignIn&flowEntry=AddSession" class="fa fa-google"></a>
+<a href="https://www.linkedin.com/uas/login" class="fa fa-linkedin"></a>
+<a href="https://www.instagram.com/accounts/login/" class="fa fa-instagram"></a>
+
+</center>
+
+</div>
+
+	</body>
+</html>
